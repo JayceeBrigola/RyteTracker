@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="RyteTracker.CalorieCounter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RyteTracker"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="698" Background="#FFF4EEFF">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" Text="My Calorie Intake" VerticalAlignment="Top" FontFamily="Poppins" FontWeight="Bold" FontSize="25" Width="226"/>
+        <Button x:Name="addItems_button" Content="Add Items" HorizontalAlignment="Left" Margin="253,30,0,0" VerticalAlignment="Top" Width="96" FontFamily="Poppins" Background="#FF424874" FontWeight="Bold" BorderBrush="#FF424874" Foreground="#FFF4EEFF" Height="21" Click="addItems_button_Click"/>
+        <DataGrid x:Name="itemsDataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0" Height="380" Width="630" AutoGenerateColumns="False" ItemsSource="{Binding ItemsList}" GridLinesVisibility="None" FontFamily="Raleway">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Foods" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Calories" Binding="{Binding Calories}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock x:Name="totalCaloriesTextBlock" HorizontalAlignment="Left" Margin="10,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Poppins" FontSize="16" Width="380"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Exercise.png" />
+    <None Remove="Female Profile.png" />
+    <None Remove="fitness.png" />
+    <None Remove="Food.png" />
+    <None Remove="Goals.png" />
+    <None Remove="Male Profile.png" />
+    <None Remove="RyteTracker logo.ico" />
+    <None Remove="Sleep.png" />
+    <None Remove="User.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\Exercise.png" />
+    <Resource Include="images\Female Profile.png" />
+    <Resource Include="images\fitness.png" />
+    <Resource Include="images\Food.png" />
+    <Resource Include="images\Goals.png" />
+    <Resource Include="images\Male Profile.png" />
+    <Resource Include="logo\RyteTracker logo.ico" />
+    <Resource Include="images\Sleep.png" />
+    <Resource Include="images\User.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="main\" />
+  </ItemGroup>
+
+</Project>
